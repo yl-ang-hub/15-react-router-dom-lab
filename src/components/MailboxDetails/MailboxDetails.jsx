@@ -26,7 +26,7 @@ const MailboxDetails = (props) => {
         </>
       ) : (
         <h2>404 Mailbox Not Found</h2>
-        // TODO: Repair mailbox not found function. Currently it unmounts App.
+        // ISSUE: Repair mailbox not found function. Currently it unmounts App component and clear state.
       )}
     </>
   );
