@@ -13,6 +13,7 @@ const MailboxForm = (props) => {
         _id: prevState.length,
         boxOwner: formOwner,
         boxSize: formSize,
+        letters: [],
       };
       idx = prevState.length + 1;
       setFormOwner("");
@@ -21,7 +22,6 @@ const MailboxForm = (props) => {
       console.log(newMailbox);
       return [...prevState, newMailbox];
     });
-    console.log(idx);
     navigate(`/mailboxes/${idx}`);
   };
 

@@ -57,6 +57,17 @@ button {
   border-radius: 5px;
 }
 
+input,
+select,
+textarea {
+  padding: 8px;
+}
+
+textarea {
+  width: 40vw;
+  height: 200px;
+}
+
 a {
   color: whitesmoke;
 }

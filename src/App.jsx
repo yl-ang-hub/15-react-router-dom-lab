@@ -4,6 +4,7 @@ import MailboxList from "./components/MailboxList/MailboxList";
 import MailboxForm from "./components/MailboxForm/MailboxForm";
 import MailboxDetails from "./components/MailboxDetails/MailboxDetails";
 import Navbar from "./components/NavBar/Navbar";
+import LetterForm from "./components/LetterForm/LetterForm";
 
 const App = () => {
   const [mailboxes, setMailboxes] = useState([]);
@@ -34,6 +35,12 @@ const App = () => {
         <Route
           path="/mailboxes/:mailboxId"
           element={<MailboxDetails mailboxes={mailboxes} />}
+        />
+        <Route
+          path="/new-letter"
+          element={
+            <LetterForm mailboxes={mailboxes} setMailboxes={setMailboxes} />
+          }
         />
       </Routes>
     </div>
